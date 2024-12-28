@@ -18,7 +18,7 @@ header {
 
 main {
   padding: 1.5rem;
-  background: rgba(144, 238, 144, 0.9); /* Light green background */
+  background: rgba(255, 165, 0, 0.9); /* Orange background */
   margin: 2rem auto;
   border-radius: 10px;
   max-width: 800px;
@@ -54,14 +54,14 @@ h2 {
 }
 
 #add-task button {
-  background-color: #28a745;
+  background-color: #FF5733; /* Orange button */
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 #add-task button:hover {
-  background-color: #218838;
+  background-color: #FF4500; /* Darker orange on hover */
 }
 
 #tasks li {
@@ -82,11 +82,11 @@ h2 {
 }
 
 #tasks .high {
-  border-left: 5px solid #dc3545;
+  border-left: 5px solid #FF5733; /* Orange left border */
 }
 
 #tasks .medium {
-  border-left: 5px solid #ffc107;
+  border-left: 5px solid #FFC107; /* Yellow left border */
 }
 
 #tasks .low {
@@ -102,7 +102,7 @@ h2 {
 }
 
 #tasks button:hover {
-  color: #007bff;
+  color: #FF5733; /* Orange hover color */
 }
 
 #task-filters select {
@@ -116,7 +116,7 @@ h2 {
 #task-summary {
   text-align: center;
   padding: 1rem;
-  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+  background: linear-gradient(to bottom right, #FF5733, #FF8C00); /* Gradient from orange to dark orange */
   color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
