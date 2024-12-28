@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-tasks"></i> Personal Task Tracker</h1>
+  </header>
+
+  <main>
+    <section id="add-task">
+      <h2><i class="fas fa-plus-circle"></i> Add Task</h2>
+      <form id="task-form">
+        <input type="text" id="task-name" placeholder="Task Name" required>
+        <select id="task-priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button type="submit"><i class="fas fa-check-circle"></i> Add Task</button>
+      </form>
+    </section>
+
+    <section id="task-filters">
+      <h2><i class="fas fa-filter"></i> Filters</h2>
+      <select id="filter-priority">
+        <option value="all">All Priorities</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <select id="filter-status">
+        <option value="all">All Statuses</option>
+        <option value="pending">Pending</option>
+        <option value="completed">Completed</option>
+      </select>
+    </section>
+
+    <section id="task-list">
+      <h2><i class="fas fa-list"></i> Task List</h2>
+      <ul id="tasks"></ul>
+    </section>
+
+    <section id="task-summary">
+      <h2><i class="fas fa-chart-pie"></i> Task Summary</h2>
+      <p id="total-tasks">Total Tasks: 0</p>
+      <p id="completed-tasks">Completed Tasks: 0</p>
+      <p id="pending-tasks">Pending Tasks: 0</p>
+
+      <!-- Add Graphs -->
+      <div>
+        <canvas id="taskBarChart"></canvas>
+      </div>
+      <div>
+        <canvas id="taskPieChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
